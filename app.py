@@ -7,7 +7,7 @@ from groq import Groq
 from pypdf import PdfReader
 
 # Configure Groq
-client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+client = Groq(api_key=st.secrets["GROQ_API_KEY"])
 
 
 def extract_text_from_pdf(uploaded_file):
